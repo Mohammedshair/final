@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Scanner</title>
+</head>
+<body>
+
+<h2>Scan USN QR Code</h2>
+
+<video id="cameraPreview" width="320" height="240" style="border:2px solid black;"></video>
+<br><br>
+
+<button onclick="startScan()">START SCAN</button>
+
+<h3>Detected USN: <span id="usnText">None</span></h3>
+<h3>Status: <span id="statusText">---</span></h3>
+
+<script src="assets/js/zxing.min.js"></script>
+<script src="qrscan.js"></script>
+
+</body>
+</html>
